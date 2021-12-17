@@ -1,8 +1,64 @@
-@import 'vars';
-@import 'fonts';
 @import 'reset';
+@import 'fonts';
+@import 'vars';
 @import 'global';
 @import 'form';
+
+
+
+.header {
+
+  &__inner {
+    padding: 40px 0 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    + .menu__list-item {
+      margin-left: 40px;
+    }    
+  }
+
+  &__list-link {
+    font-size: 16px;
+    line-height: 1.25;
+    color: $default;
+    transition: all .3s;
+
+    &:hover {
+      border-bottom: 1px solid $default;
+    }
+  }
+}
+
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    + .user-nav__link {
+      margin-left: 24px;
+    }
+    cursor: pointer;
+  }  
+}
+
+
+// footer
+
+
+
+
 
 
 
