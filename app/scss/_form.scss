@@ -1,0 +1,36 @@
+.footer-top {
+
+  &__form {
+    position: relative;
+  }
+
+  &__input {
+    width: 386px;
+    height: 56px;
+    border: none;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 18px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 103px;
+    height: 40px;
+    border: none;
+    background-color: $button;
+    @extend %redhat-500;
+    font-size: 14px;
+    line-height: 1.43;
+    color: $white;
+    padding: 10px 20px;
+  }
+}

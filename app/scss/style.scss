@@ -5,7 +5,7 @@
 @import 'form';
 
 
-
+// header
 .header {
 
   &__inner {
@@ -24,9 +24,9 @@
   }
 
   &__list-item {
-    + .menu__list-item {
+    +.menu__list-item {
       margin-left: 40px;
-    }    
+    }
   }
 
   &__list-link {
@@ -46,15 +46,98 @@
   justify-content: space-between;
 
   &__link {
-    + .user-nav__link {
+    +.user-nav__link {
       margin-left: 24px;
     }
+
     cursor: pointer;
-  }  
+  }
 }
 
 
 // footer
+.footer {
+  background-color: $footer;
+
+  &__inner {
+    padding: 99px 0 56px;
+  }
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 59px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 59px;
+
+  &__title {
+    @extend %redhat-500;
+    font-size: 36px;
+    line-height: 1.28;
+    color: $default;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  padding: 0 103px;
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+
+  &__descr {
+    width: 328px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.78;
+  }
+
+  &__quick {}
+
+  &__title {
+    @extend %redhat-500;
+    color: $default;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 24px 0 30px;
+  }
+
+  &__list {}
+
+  &__item {}
+
+  &__links {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $default;
+    margin-bottom: 14px;
+  }
+
+  &__contacts {}
+
+  &__social {
+    display: flex;
+  }
+
+  &__social-item {
+    margin-right: 27px;
+  }
+
+  &__social-link {}
+}
+
+
+
+
 
 
 
