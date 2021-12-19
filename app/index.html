@@ -1,19 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dudeshape</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#" aria-label="Logo image">
+            <img
+              class="logo__img"
+              src="images/logo.png"
+              width="128"
+              height="30"
+              alt="Logo image."
+            />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Home</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Products</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">About Us</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <div class="user-nav__link">
+              <img
+                class="user-nav__icon"
+                src="images/icons/user.svg"
+                width="24"
+                height="24"
+                alt="Icon user."
+              />
+            </div>
+            <div class="user-nav__link">
+              <img
+                class="user-nav__icon"
+                src="images/icons/cart.svg"
+                width="24"
+                height="24"
+                alt="Icon cart."
+              />
+            </div>
+            <div class="user-nav__link">
+              <img
+                class="user-nav__icon"
+                src="images/icons/line.svg"
+                width="24"
+                height="24"
+                alt="Icon line."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<body>
+    <main class="main"></main>
 
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer-top">
+            <h3 class="footer-top__title">Subscribe to Get Our Letest News</h3>
+            <form class="footer-top__form" action="#">
+              <label class="footer-top__label" for="Enter email">
+                <input
+                  class="footer-top__input"
+                  type="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </label>
+              <button
+                class="footer-top__btn"
+                type="submit"
+                aria-label="Button subscribe."
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
 
+          <div class="footer-bottom">
+            <div class="footer-bottom__descr">
+              <a class="logo" href="#" aria-label="Logo image">
+                <img
+                  class="logo__img"
+                  src="images/logo.png"
+                  width="213"
+                  height="50"
+                  alt="Logo image."
+                />
+              </a>
+              <p class="footer-bottom__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+            </div>
+            <div class="footer-bottom__quick">
+              <h5 class="footer-bottom__title">Quick Link</h5>
+              <ul class="footer-bottom__list">
+                <li class="footer-bottom__item">
+                  <a class="footer-bottom__links" href="#"> Home </a>
+                </li>
+                <li class="footer-bottom__item">
+                  <a class="footer-bottom__links" href="#"> Products </a>
+                </li>
+                <li class="footer-bottom__item">
+                  <a class="footer-bottom__links" href="#"> About Us </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-bottom__contacts">
+              <h5 class="footer-bottom__title">Contact Us</h5>
+              <ul class="footer-bottom__list">
+                <li class="footer-bottom__item">
+                  <a
+                    class="footer-bottom__links"
+                    href="mailto: oyasimnaeem@email.com"
+                  >
+                    oyasimnaeem@email.com
+                  </a>
+                </li>
+                <li class="footer-bottom__item">
+                  <a class="footer-bottom__links" href="tel:+123456789">
+                    +123456789
+                  </a>
+                </li>
+              </ul>
+              <div class="footer-bottom__social">
+                <a class="footer-bottom__social-item" href="#" aria-label="Icon facebook">
+                  <img
+                    class="footer-bottom__social-link"
+                    src="images/icons/fb.svg"
+                    width="13"
+                    height="13"
+                    alt="Icon facebook."
+                  />
+                </a>
+                <a class="footer-bottom__social-item" href="#" aria-label="Icon twitter"> 
+                  <img
+                    class="footer-bottom__social-link"
+                    src="images/icons/twitter.svg"
+                    width="13"
+                    height="13"
+                    alt="Icon twitter."
+                  />
+                </a>
+                <a class="footer-bottom__social-item" href="#" aria-label="Icon instagram">
+                  <img
+                    class="footer-bottom__social-link"
+                    src="images/icons/insta.svg"
+                    width="13"
+                    height="13"
+                    alt="Icon instagram."
+                  />
+                </a>                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <script src="js/main.min.js"></script>
-</body>
-
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

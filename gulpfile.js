@@ -77,7 +77,7 @@ function fonts () {
       subset: [66,67,68, 69, 70, 71],
       formats: ['woff', 'ttf']
     }))
-    .pipe(dest('dist'));
+    .pipe(dest('dist/fonts'));
 }
 
 function build() {
@@ -110,4 +110,4 @@ exports.fonts          = fonts;
 exports.cleanDist      = cleanDist;
 exports.build          = series(cleanDist, images, build);
 
-exports.default = parallel(styles, fonts, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, browsersync, watching);

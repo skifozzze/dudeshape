@@ -1,0 +1,32 @@
+$accent: #555555;
+$title: #000000;
+$default: #222222;
+$brown: #402F2C;
+$footer: #fafafa;
+$button: rgba(64, 47, 44, 1);
+$white: #ffffff;
+
+%redhat-400 {
+  font-family: 'RedHatDisplay-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%redhat-500 {
+  font-family: 'RedHatDisplay-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%redhat-700 {
+  font-family: 'RedHatDisplay-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%redhat-700-it {
+  font-family: 'RedHatDisplay-BoldItalic', sans-serif;
+  font-weight: 700;
+}
+
+%roboto-400 {
+  font-family: 'Roboto-Regular', sans-serif;
+  font-weight: 400;
+}
