@@ -129,15 +129,11 @@
 // product-slider
 
 .product-slider {
-  background-color: $header;    
-
-  &__inner {  
-   
-  }
-
+  background-color: $header;      
+  
   &__slide {
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right;   
     background-size: contain;    
     height: 609px;   
   }  
@@ -170,9 +166,44 @@
     line-height: 1.33;
     color: $white;
     padding: 16px 32px;
-  }
-  
+  }  
 }
+
+.slider {
+ position: relative;
+}
+
+.slick-arrow {
+ position: absolute;
+ bottom: 50px; 
+ z-index: 2; 
+ font-size: 0; 
+ width: 40px; 
+ height: 40px; 
+ border: none;
+ cursor: pointer;
+ 
+}
+
+.slick-prev {
+  left: 47%; 
+  background: url('../images/icons/left-arrow.svg');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next {
+  left: 50%; 
+  background: url('../images/icons/right-arrow.svg');
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 
 
 

@@ -1,7 +1,7 @@
 .footer-top {
 
   &__form {
-    position: relative;   
+    position: relative;       
   }
 
   &__input {
@@ -45,7 +45,7 @@
   }
   
   &__input {  
-    width: 362px;     
+    width: 326px;     
     border: none;
     @extend %redhat-400;
     font-size: 20px;
@@ -63,7 +63,7 @@
   &__btn {
     position: absolute;    
     top: 8px;
-    right: -28px;
+    right: 8px;
     width: 32px;
     height: 32px;    
     border: none;
