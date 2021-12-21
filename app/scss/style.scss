@@ -211,7 +211,7 @@
 // partners
 
 .partners {
-  padding: 130px 0;
+  padding: 128px 0;
 
   &__inner {
     padding: 30px 0;
@@ -236,7 +236,7 @@
 }
 
 .popular-top {
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 
   &__title {
     margin-bottom: 20px;
@@ -252,8 +252,7 @@
     width: 100%;
   }
 
-  &__link {
-    display: inline-flex;
+  &__link {    
     @extend %redhat-500;
     font-size: 24px;
     line-height: 1.25;
@@ -276,10 +275,12 @@
 
 .popular-content {
  display: flex; 
- 
-
+  
   &__item {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(104, 90, 82, 0.19);
+    max-width: 600px;
 
     &+.popular-content__item {
       margin-left: 40px;
@@ -291,7 +292,7 @@
   }
 
   &__title {
-    margin: 0 52px 16px 32px;   
+    margin: 0 28px 16px;   
   }
 
   &__title-link { 
@@ -302,11 +303,11 @@
   }
 
   &__descr {
-    margin: 0 52px 48px 32px;
+    margin: 0 28px 44px;
   }
 
   &__box {
-    padding: 0 32px 32px;
+    margin: auto 28px 31px;
     display: flex;    
     align-items: center;
   }
@@ -334,6 +335,10 @@
   }
 
   &__price {
+    @extend %redhat-500;
+    font-size: 30px;
+    line-height: 1.07;
+    color: $default;
     margin-left: auto;
   }
 }
