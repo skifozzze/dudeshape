@@ -6,7 +6,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: $white;
   font-size: 20px;
   line-height: 1.6;
   @extend %redhat-400;
@@ -28,4 +28,22 @@ body {
   font-size: 56px;
   line-height: 1.25;
   color: $title;
+}
+
+.shop-button {
+  cursor: pointer;
+  border: none;
+  width: 148px;
+  background-color: $brown;
+  @extend %redhat-500;
+  font-size: 18px;
+  line-height: 1.33;
+  color: $white;
+  padding: 16px 31px;
+
+  &:hover {
+    background-color: $white;
+    color: $brown;
+    border: 1px solid rgba(104, 90, 82, 0.19);
+  }
 }

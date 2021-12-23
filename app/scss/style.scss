@@ -161,19 +161,7 @@
     max-width: 516px;
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  &__button {
-    cursor: pointer;
-    border: none;
-    width: 148px;    
-    background-color: $brown;
-    @extend %redhat-500;
-    font-size: 18px;
-    line-height: 1.33;
-    color: $white;
-    padding: 16px 32px;
-  }  
+  } 
 }
 
 .slider {
@@ -231,8 +219,7 @@
 // popular
 
 .popular {
-
-  &__inner {}
+  padding-bottom: 130px; 
 }
 
 .popular-top {
@@ -289,6 +276,7 @@
 
   &__img {
     margin-bottom: 20px;   
+    object-fit: cover;
   }
 
   &__title {
@@ -321,16 +309,20 @@
     cursor: pointer;    
   }
 
-  &__btn-buy {
+  &__btn-buy,
+  &__btn-add {
     border: none;
     background-color: $brown;
     color: $white;
+    border: 1px solid rgba(104, 90, 82, 0.46);
+
+    &:hover {     
+      background-color: $white;
+      color: $brown;
+    }
   }
 
-  &__btn-add {    
-    border: 1px solid rgba(104, 90, 82, 0.46);
-    background-color: $white;
-    color: $brown;
+  &__btn-add {        
     margin-left: 24px;
   }
 
@@ -342,6 +334,70 @@
     margin-left: auto;
   }
 }
+
+// advantages
+
+.advantages {
+  background-color: $beige; 
+
+ &__inner {
+   padding: 58px 0;
+   display: flex;   
+   text-align: center;
+   justify-content: space-around;  
+  } 
+
+  &__item-num {
+    display: inline-block;
+    @extend %redhat-700;
+    font-size: 56px;
+    line-height: 1.25;
+    color: $default;
+    padding-bottom: 4px;
+    border-bottom: 3px solid $default;
+    margin-bottom: 30px;
+  }
+
+  &__item-text {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+// about
+
+.about {
+
+  &__inner {
+    padding: 130px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__descr {
+    margin-right: 32px;
+    padding: 45px 0;
+  }
+
+  &__descr-title {
+    max-width: 520px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__descr-text {
+    margin-bottom: 20px;
+  }
+
+  &__descr-btn {
+    margin-top: 27px;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+
 
 
 
