@@ -1,7 +1,7 @@
 $(function () {
 
   $('.menu__btn').on('click', function () {
-    $('.menu__list').toggleClass('.menu__list--active');
+    $('.menu__list').toggleClass('menu__list--active');
   })
 
   $('.menu').on("click","a", function (event) {		
@@ -33,6 +33,16 @@ $(function () {
   
   $('.product-slider__inner').slick({  
     fade: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        }
+      }
+    ]
   })
   
 })

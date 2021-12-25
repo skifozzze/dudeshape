@@ -41,6 +41,7 @@ body {
   line-height: 1.33;
   color: $white;
   padding: 16px 31px;
+  margin-bottom: 20px;
 
   &:hover {
     background-color: $white;
@@ -48,3 +49,46 @@ body {
     border: 1px solid rgba(104, 90, 82, 0.19);
   }
 }
+
+@media (max-width: $xl) {
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: $lg) {
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: $md) {
+
+  .title {
+    font-size: 35px;
+  }
+
+  .shop-button {
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: $sm) {
+
+  .body {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .shop-button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
