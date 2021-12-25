@@ -1,11 +1,33 @@
+@media (max-width: $xl){
+
+  .product-slider {
+
+    &__slide {
+      height: auto;
+    }
+
+    &__text {
+      max-width: 360px;
+    }   
+  }
+} 
+
+@media (max-width: $lg) {
+
+  .product-slider {
+
+    &__content {
+      max-width: 400px;
+      width: 100%;
+      background-color: $header;
+    }   
+  }
+}
+
 @media (max-width: $md) {
  
-  .menu {   
-    
-    // .menu__list {
-    //   padding: 20px 0;
-    // }
-
+  .menu {      
+   
     order: 1;
 
     &__btn {      
@@ -46,27 +68,22 @@
     }
 
     &__list {
-      // transform: translateY(-200%);
+      transform: translateY(-200%);
       position: absolute;
       z-index: 10;
       width: 100%;
-      top: 130px;
+      top: 100px;
       flex-direction: column;
       align-items: center;
       left: 0;     
       background-color: $header;  
       transition: all .3s;
 
-      .menu__list.menu__list--active {
-        background-color: red;
+      &.menu__list--active {
+       transform: translateY(0%);
+       transition: all .3s;
       }
-
-      // &.menu__list--active {
-      //  transform: translateY(0%);
-      //  transition: all .3s;
-      // }
-    }     
-    
+    }         
    
     &__list-item {
       text-align: center;
@@ -86,6 +103,29 @@
   .user-nav {
     margin-left: auto;
   }
+
+  .product-slider {
+
+    &__slide {
+      background-image: none !important;
+    }
+
+    &__title,
+    &__text {
+      margin-bottom: 20px;
+    }    
+
+    &__content,
+    &__text {
+      min-width: 100%;
+    }
+    
+    // .slick-arrow {
+    //  bottom: 200%;
+    // }
+  
+  }
+
   
 }
 
@@ -93,6 +133,10 @@
 
   .menu {
     order: 0;
+
+    &__list {
+      top: 155px;
+    }
   }
 
   .user-nav {

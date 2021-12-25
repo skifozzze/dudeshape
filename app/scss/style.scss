@@ -54,8 +54,7 @@
 }
 
 .user-nav {
-  display: flex;
-  // justify-content: space-between;
+  display: flex; 
 
   &__link {
     +.user-nav__link {
@@ -147,23 +146,20 @@
   margin-top: 22px;
   padding-top: 114px;
   
-
   &__inner {    
     max-width: 1470px;
     padding: 0 15px;
     margin: 0 auto;
   }
 
-
-  &__slide {
-    
+  &__slide {    
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
     height: 609px;
   }
 
-  &__content {
+  &__content {   
     position: relative;
     padding-top: 40px;
     z-index: 1;
