@@ -1,6 +1,18 @@
 $(function () {
 
-  $(".response__content-stars").rateYo({
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('.menu__list--active');
+  })
+
+  $('.menu').on("click","a", function (event) {		
+		event.preventDefault();		
+		var id  = $(this).attr('href'),		
+			top = $(id).offset().top;	
+		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
+
+  $('.response__content-stars').rateYo({
     ratedFill: "rgba(255, 192, 70, 1)",   
     readOnly: true,
     starWidth: "24px",

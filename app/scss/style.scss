@@ -8,23 +8,33 @@
 
 // header
 .header {
-  background-color: $header;
+  background-color: $header;  
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
 
   &__inner {
-    padding: 40px 0 68px;
+    padding: 40px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;     
+    flex-wrap: wrap; 
   }
 }
 
 .menu {
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
+  &__btn {
+    display: none;
   }
 
+  &__list {
+    display: flex;
+    justify-content: space-between;  
+  }
+  
   &__list-item {
     +.menu__list-item {
       margin-left: 40px;
@@ -45,7 +55,7 @@
 
 .user-nav {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
 
   &__link {
     +.user-nav__link {
@@ -94,7 +104,7 @@
 
   &__descr {
     width: 328px;
-  } 
+  }
 
   &__contacts {
     margin-right: 15px;
@@ -134,8 +144,11 @@
 
 .product-slider {
   background-color: $header;
+  margin-top: 22px;
+  padding-top: 114px;
+  
 
-  &__inner {
+  &__inner {    
     max-width: 1470px;
     padding: 0 15px;
     margin: 0 auto;
@@ -143,6 +156,7 @@
 
 
   &__slide {
+    
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -203,7 +217,7 @@
 // partners
 
 .partners {
-  padding: 128px 0 64px;
+  padding-top: 128px;
 
   &__inner {
     padding: 30px 0;
@@ -223,7 +237,7 @@
 // popular
 
 .popular {
-  padding: 64px 0 130px;
+  padding: 128px 0 130px;
 }
 
 .popular-top {
@@ -479,7 +493,7 @@
 
   &__button-prev,
   &__button-next {
-    position: absolute;  
+    position: absolute;
     top: 525px;
     color: #6FB587;
     width: 32px;
@@ -491,12 +505,12 @@
   }
 
 
-  &__button-prev {   
+  &__button-prev {
     left: 655px;
   }
-        
-  &__button-next {    
-    left: 705px;     
+
+  &__button-next {
+    left: 705px;
   }
 }
 
