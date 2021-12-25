@@ -27,7 +27,7 @@
     "rateyo": "^2.3.2",
     "sass": "^1.43.4",
     "slick-carousel": "^1.8.1",
-    "swiper": "^7.3.3"
+    "swiper": "^7.3.4"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
