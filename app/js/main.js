@@ -9,7 +9,7 @@ $(function () {
 		var id  = $(this).attr('href'),		
 			top = $(id).offset().top;	
 		$('body,html').animate({scrollTop: top}, 1500);
-	});
+  }); 
 
 
   $('.response__content-stars').rateYo({
@@ -25,24 +25,19 @@ $(function () {
   const swiper = new Swiper('.swiper', {  
     spaceBetween: 20,   
     navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+     nextEl: '.swiper-button-next',
+     prevEl: '.swiper-button-prev',      
+    },
+    autoplay: {
+      delay: 2000,      
+    }
   });
 
   
   $('.product-slider__inner').slick({  
     fade: true,
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        }
-      }
-    ]
+    autoplay: true,
+    autoplaySpeed: 2000,   
   })
   
 })

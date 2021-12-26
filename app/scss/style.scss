@@ -94,6 +94,7 @@
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 0 95px;
 
   .logo {
@@ -144,7 +145,7 @@
 .product-slider {
   background-color: $header;
   margin-top: 22px;
-  padding-top: 114px;
+  padding-top: 132px;
   
   &__inner {    
     max-width: 1470px;
@@ -355,10 +356,15 @@
   background-color: $beige;
 
   &__inner {
-    padding: 58px 0;
+    padding: 46px 60px;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin: 10px;
   }
 
   &__item-num {
@@ -384,8 +390,7 @@
 
   &__inner {
     padding: 130px 0 65px;
-    display: flex;
-    align-items: center;
+    display: flex;    
   }
 
   &__descr {
@@ -408,7 +413,7 @@
   }
 
   &__img {
-    object-fit: cover;
+    object-fit: cover;     
   }
 }
 
@@ -484,13 +489,13 @@
   }
 
   &__content-proffesion {
-    line-height: 1.2;
+    line-height: 1.2;    
   }
 
   &__button-prev,
   &__button-next {
     position: absolute;
-    top: 525px;
+    top: 540px;
     color: #6FB587;
     width: 32px;
     height: 32px;
@@ -499,7 +504,6 @@
 
     --swiper-navigation-size: 16px;
   }
-
 
   &__button-prev {
     left: 655px;

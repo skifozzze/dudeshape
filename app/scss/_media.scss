@@ -1,5 +1,12 @@
 @media (max-width: $xl){
 
+  .header {
+
+    &__inner {
+      padding: 20px 0;
+    }
+  }
+
   .product-slider {
 
     &__slide {
@@ -9,6 +16,107 @@
     &__text {
       max-width: 360px;
     }   
+  }
+
+  .partners {
+    padding-top: 80px;
+  }
+
+  .popular {
+    padding: 128px 0 80px;
+  }
+
+  .popular-top {
+    margin-bottom: 40px;
+
+    &__link {
+      font-size: 22px;
+    }
+
+    &__descr {
+      max-width: 500px;
+    }
+  }
+
+  .popular-content {
+
+    &__title-link {
+      font-size: 36px;
+    }
+
+    &__descr {
+      margin: 0 28px 25px;
+    }
+
+    &__box {
+      margin: 0 28px 25px;
+    }
+
+    &__img {
+      height: auto;
+    }
+  }
+
+  .advantages {
+
+    &__inner {
+      justify-content: space-around;
+      padding: 46px 0;
+    }
+
+    &__item-num {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .about {
+
+    &__img {
+      height: auto;
+      width: 50%;
+    }
+  }
+
+  .response{
+
+    &__img {
+      margin-right: 30px;
+      height: auto;      
+    }
+
+    &__content-stars {
+      margin-bottom: 20px;
+    }
+
+    &__content-text {
+      margin-bottom: 40px;
+    }
+
+    &__button-prev,
+    &__button-next {       
+       top: 580px;
+    }
+  }
+
+  .footer {
+
+    &__inner {
+      padding: 40px 0;
+    }    
+  }
+
+  .footer-top {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-bottom {
+    padding: 0;
+
+    &__contacts {
+      margin-right: 0;
+    }
   }
 } 
 
@@ -22,7 +130,79 @@
       background-color: $header;
     }   
   }
+
+  .popular-top {
+    margin-bottom: 30px;
+
+    &__box {
+      flex-direction: column;
+    }
+
+    &__descr {
+      margin-bottom: 15px;
+    }
+  }
+
+  .popular-content {
+    
+    &__item {
+
+      &+.popular-content__item {
+        margin-left: 15px;
+      }
+    }
+
+    &__title,
+    &__descr,
+    &__box {
+      margin: 0 10px 20px;
+    }
+
+    &__title-link {
+      font-size: 32px;
+    }
+
+    &__price {
+      font-size: 26px;
+    }
+
+    &__btn-buy,
+    &__btn-add {
+      padding: 10px 14px;
+    }
+  }
+
+  .response {
+
+    &__img {
+      width: 50%;
+    }
+
+    &__button-prev,
+    &__button-next {     
+      top: 70px;      
+      width: 24px;
+      height: 24px;    
+
+      --swiper-navigation-size: 10px;
+    }  
+
+    &__content-text {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .footer-top {
+    flex-direction: column;
+
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }  
 }
+
+ 
 
 @media (max-width: $md) {
  
@@ -72,7 +252,7 @@
       position: absolute;
       z-index: 10;
       width: 100%;
-      top: 100px;
+      top: 60px;
       flex-direction: column;
       align-items: center;
       left: 0;     
@@ -106,8 +286,12 @@
 
   .product-slider {
 
-    &__slide {
+    .product-slider__slide {
       background-image: none !important;
+    } 
+
+    .slick-arrow {
+      bottom: 200%;
     }
 
     &__title,
@@ -117,17 +301,175 @@
 
     &__content,
     &__text {
-      min-width: 100%;
-    }
-    
-    // .slick-arrow {
-    //  bottom: 200%;
-    // }
+      max-width: 100%;
+    }       
+  } 
   
+  .partners {
+    padding-top: 40px;
+
+    &__inner {
+      padding: 20px 0;
+    }
+  }   
+
+  .popular {
+    padding: 40px 0 40px;
   }
 
-  
+  .popular-top {
+    margin-bottom: 20px;
+  }
+
+  .popular-content {
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+
+      &+.popular-content__item {
+        margin-left: 0;
+      }
+
+      &:first-child {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__link-title {
+      font-size: 28px;
+    }
+
+    &__img {
+      height: 300px;
+    }
+
+    &__title,
+    &__descr,
+    &__box {
+      margin: 0 10px 10px;
+    }
+
+    &__price {
+      font-size: 22px;
+    }
+  }
+
+  .advantages {
+
+    &__inner {
+      padding: 30px 0;
+    }
+
+    &__item-num {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    &__item-text {
+      font-size: 22px;
+    }
+  }
+
+  .about {
+
+    &__inner {
+      flex-direction: column;
+      padding: 40px 0;
+    }
+
+    &__descr {
+      order: 2;
+      padding: 0;
+      margin-right: 0;
+    }
+      
+    &__descr-btn {
+      margin-top: 0;
+    }
+
+    &__img {
+      width: 100%;
+      height: 300px;
+      object-fit: scale-down;
+      margin-bottom: 20px;
+    
+    }
+  }
+
+  .response {
+
+    &__wrapper {
+      padding: 40px 0;
+    }
+
+    &__slide {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 100%;
+      height: 300px;
+      margin-right: 0;
+      object-fit: scale-down;
+    }
+
+    &__content {
+      padding: 20px;
+    }
+
+    &__content-text {
+      max-width: 100%;
+    }
+
+    &__content-title,
+    &__content-name {
+      font-size: 26px;
+    }
+
+    &__button-prev,
+    &__button-next {
+      display: none;
+    }
+  }
+
+  .footer-top {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-bottom {
+    justify-content: space-around;
+    text-align: center;
+
+    .logo {
+      margin-bottom: 10px;
+    }
+
+    &__descr {
+      width: 100%;
+    }
+
+    &__quick,
+    &__contacts {
+      margin: 10px;
+    }
+
+    &__title {
+      margin: 15px 0;
+    }
+
+    &__social {
+      justify-content: center;
+    }
+
+    &__social-item {
+     margin: 10px;;
+    }
+  }
 }
+
+ 
 
 @media (max-width: $sm){
 
@@ -135,7 +477,7 @@
     order: 0;
 
     &__list {
-      top: 155px;
+      top: 120px;
     }
   }
 
@@ -144,4 +486,72 @@
     margin-top: 30px;
     justify-content: flex-end;
   }  
+
+  .popular-content {
+
+    &__title-link {
+      font-size: 24px;
+    }
+
+    &__box {
+      display: block;
+    }
+
+   &__btn-buy,
+   &__btn-add {
+     width: 100%;
+   }
+
+   &__btn-add {
+     margin: 10px 0 10px;
+   }
+  }
+
+  .advantages {
+
+    &__inner {
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    &__item {
+      margin: 10px;
+    }
+
+    &__item-num {
+      font-size:24px;
+      margin-bottom: 10px;
+    }
+
+    &__item-text {
+      font-size: 18px;
+    }
+  }
+
+  .response {
+    &__content-title,
+    &__content-name {
+      font-size: 24px;
+    }
+  }
+
+  .footer-top {
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__input {
+      width: 100%;
+    }
+
+    &__btn {
+      width: 80px;
+      padding: 5px 10px;
+    }
+  }
+
+  // .footer-bottom {
+  //   justify-content: flex-start;
+  // }
 }
